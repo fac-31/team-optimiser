@@ -1,0 +1,507 @@
+Fetching team history from fac-31 organization...
+
+Pro1020-ALAN: annavanwingerden, Oggie112, arecouz
+commons-traybake: JasonWarrenUK, nchua3012, JosephPotashnik, Jaz-spec
+TravelAgencyBE: chrislush, FortyTwoFortyTwo, AlexVOiceover
+TravelAgencyFE: chrislush, Edga380
+Pro0929-CLI-Unites: annavanwingerden, Jaz-spec, arecouz
+FAC31_Bodybuilders: chrislush, nchua3012, AlexVOiceover, Edga380
+ReDoT: FortyTwoFortyTwo, JasonWarrenUK, JosephPotashnik, github-actions[bot]
+Pro0217-BookRecommender: JosephPotashnik, arecouz, chrislush, FortyTwoFortyTwo
+DevTools1509-LocalRAGBackend: JosephPotashnik
+Pro0623-StoryMaker: JosephPotashnik, annavanwingerden, Oggie112, FortyTwoFortyTwo, google-labs-jules[bot]
+Pro0623-ObsidianTwoPointOPointO: arecouz, Jaz-spec, RedHellier, nchua3012, chrislush
+Pro0428-LocalEventBackend: Oggie112, arecouz, Jaz-spec, FortyTwoFortyTwo
+Pro0428-F.L.A.T.BackEnd: nchua3012, chrislush, annavanwingerden
+Pro0428-F.L.A.T.FrontEnd: chrislush, annavanwingerden, nchua3012
+Pro0428-LocalEventFrontend: Jaz-spec, FortyTwoFortyTwo, arecouz, Oggie112
+Pro0428-MindPalaceBackend: JosephPotashnik, RedHellier, AnyaVeselova
+Pro0428-MindPalaceFrontEnd: JosephPotashnik, RedHellier
+Pro0428-LocalEventShared: FortyTwoFortyTwo, arecouz, Oggie112, Jaz-spec
+Pro0217-UserGeneration: Jaz-spec, nchua3012, DNMathEye, erosdavid
+Pro0217-MyTarotation: RedHellier, Oggie112, annavanwingerden, AnyaVeselova
+Wor0206-VanA-LusC-ChuN-CouR-APIProject: arecouz, chrislush, nchua3012, annavanwingerden
+Wor0205-MasJ-OgdD-VesA: Oggie112, AnyaVeselova, Jaz-spec
+Wor0205-HelR-MatD-PotS-RowC: RedHellier, FortyTwoFortyTwo, JosephPotashnik, DNMathEye
+Wor0205-VanA-LusC-ChuN-CouR-FirstNodeJSProject: arecouz, annavanwingerden, chrislush, nchua3012
+
+
+Total unique contributors: 17
+Total teams (repositories): 24
+
+
+=== EXAMPLE DATA ===
+
+Copy this into your application:
+
+{
+  "people": [
+    {
+      "id": "1",
+      "name": "AlexVOiceover"
+    },
+    {
+      "id": "2",
+      "name": "AnyaVeselova"
+    },
+    {
+      "id": "3",
+      "name": "DNMathEye"
+    },
+    {
+      "id": "4",
+      "name": "Edga380"
+    },
+    {
+      "id": "5",
+      "name": "FortyTwoFortyTwo"
+    },
+    {
+      "id": "6",
+      "name": "JasonWarrenUK"
+    },
+    {
+      "id": "7",
+      "name": "Jaz-spec"
+    },
+    {
+      "id": "8",
+      "name": "JosephPotashnik"
+    },
+    {
+      "id": "9",
+      "name": "Oggie112"
+    },
+    {
+      "id": "10",
+      "name": "RedHellier"
+    },
+    {
+      "id": "11",
+      "name": "annavanwingerden"
+    },
+    {
+      "id": "12",
+      "name": "arecouz"
+    },
+    {
+      "id": "13",
+      "name": "chrislush"
+    },
+    {
+      "id": "14",
+      "name": "erosdavid"
+    },
+    {
+      "id": "15",
+      "name": "github-actions[bot]"
+    },
+    {
+      "id": "16",
+      "name": "google-labs-jules[bot]"
+    },
+    {
+      "id": "17",
+      "name": "nchua3012"
+    }
+  ],
+  "conflictMatrix": {
+    "1": {
+      "4": 1,
+      "5": 1,
+      "13": 2,
+      "17": 1
+    },
+    "2": {
+      "7": 1,
+      "8": 1,
+      "9": 2,
+      "10": 2,
+      "11": 1
+    },
+    "3": {
+      "5": 1,
+      "7": 1,
+      "8": 1,
+      "10": 1,
+      "14": 1,
+      "17": 1
+    },
+    "4": {
+      "1": 1,
+      "13": 2,
+      "17": 1
+    },
+    "5": {
+      "1": 1,
+      "3": 1,
+      "6": 1,
+      "7": 3,
+      "8": 4,
+      "9": 4,
+      "10": 1,
+      "11": 1,
+      "12": 4,
+      "13": 2,
+      "15": 1,
+      "16": 1
+    },
+    "6": {
+      "5": 1,
+      "7": 1,
+      "8": 2,
+      "15": 1,
+      "17": 1
+    },
+    "7": {
+      "2": 1,
+      "3": 1,
+      "5": 3,
+      "6": 1,
+      "8": 1,
+      "9": 4,
+      "10": 1,
+      "11": 1,
+      "12": 5,
+      "13": 1,
+      "14": 1,
+      "17": 3
+    },
+    "8": {
+      "2": 1,
+      "3": 1,
+      "5": 4,
+      "6": 2,
+      "7": 1,
+      "9": 1,
+      "10": 3,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1
+    },
+    "9": {
+      "2": 2,
+      "5": 4,
+      "7": 4,
+      "8": 1,
+      "10": 1,
+      "11": 3,
+      "12": 4,
+      "16": 1
+    },
+    "10": {
+      "2": 2,
+      "3": 1,
+      "5": 1,
+      "7": 1,
+      "8": 3,
+      "9": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "17": 1
+    },
+    "11": {
+      "2": 1,
+      "5": 1,
+      "7": 1,
+      "8": 1,
+      "9": 3,
+      "10": 1,
+      "12": 4,
+      "13": 4,
+      "16": 1,
+      "17": 4
+    },
+    "12": {
+      "5": 4,
+      "7": 5,
+      "8": 1,
+      "9": 4,
+      "10": 1,
+      "11": 4,
+      "13": 4,
+      "17": 3
+    },
+    "13": {
+      "1": 2,
+      "4": 2,
+      "5": 2,
+      "7": 1,
+      "8": 1,
+      "10": 1,
+      "11": 4,
+      "12": 4,
+      "17": 6
+    },
+    "14": {
+      "3": 1,
+      "7": 1,
+      "17": 1
+    },
+    "15": {
+      "5": 1,
+      "6": 1,
+      "8": 1
+    },
+    "16": {
+      "5": 1,
+      "8": 1,
+      "9": 1,
+      "11": 1
+    },
+    "17": {
+      "1": 1,
+      "3": 1,
+      "4": 1,
+      "6": 1,
+      "7": 3,
+      "8": 1,
+      "10": 1,
+      "11": 4,
+      "12": 3,
+      "13": 6,
+      "14": 1
+    }
+  },
+  "suggestedTeamSizes": [
+    [
+      5,
+      4,
+      4,
+      4
+    ]
+  ],
+  "teamHistory": [
+    {
+      "repo": "Pro1020-ALAN",
+      "team": [
+        "11",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "repo": "commons-traybake",
+      "team": [
+        "6",
+        "17",
+        "8",
+        "7"
+      ]
+    },
+    {
+      "repo": "TravelAgencyBE",
+      "team": [
+        "13",
+        "5",
+        "1"
+      ]
+    },
+    {
+      "repo": "TravelAgencyFE",
+      "team": [
+        "13",
+        "4"
+      ]
+    },
+    {
+      "repo": "Pro0929-CLI-Unites",
+      "team": [
+        "11",
+        "7",
+        "12"
+      ]
+    },
+    {
+      "repo": "FAC31_Bodybuilders",
+      "team": [
+        "13",
+        "17",
+        "1",
+        "4"
+      ]
+    },
+    {
+      "repo": "ReDoT",
+      "team": [
+        "5",
+        "6",
+        "8",
+        "15"
+      ]
+    },
+    {
+      "repo": "Pro0217-BookRecommender",
+      "team": [
+        "8",
+        "12",
+        "13",
+        "5"
+      ]
+    },
+    {
+      "repo": "DevTools1509-LocalRAGBackend",
+      "team": [
+        "8"
+      ]
+    },
+    {
+      "repo": "Pro0623-StoryMaker",
+      "team": [
+        "8",
+        "11",
+        "9",
+        "5",
+        "16"
+      ]
+    },
+    {
+      "repo": "Pro0623-ObsidianTwoPointOPointO",
+      "team": [
+        "12",
+        "7",
+        "10",
+        "17",
+        "13"
+      ]
+    },
+    {
+      "repo": "Pro0428-LocalEventBackend",
+      "team": [
+        "9",
+        "12",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "repo": "Pro0428-F.L.A.T.BackEnd",
+      "team": [
+        "17",
+        "13",
+        "11"
+      ]
+    },
+    {
+      "repo": "Pro0428-F.L.A.T.FrontEnd",
+      "team": [
+        "13",
+        "11",
+        "17"
+      ]
+    },
+    {
+      "repo": "Pro0428-LocalEventFrontend",
+      "team": [
+        "7",
+        "5",
+        "12",
+        "9"
+      ]
+    },
+    {
+      "repo": "Pro0428-MindPalaceBackend",
+      "team": [
+        "8",
+        "10",
+        "2"
+      ]
+    },
+    {
+      "repo": "Pro0428-MindPalaceFrontEnd",
+      "team": [
+        "8",
+        "10"
+      ]
+    },
+    {
+      "repo": "Pro0428-LocalEventShared",
+      "team": [
+        "5",
+        "12",
+        "9",
+        "7"
+      ]
+    },
+    {
+      "repo": "Pro0217-UserGeneration",
+      "team": [
+        "7",
+        "17",
+        "3",
+        "14"
+      ]
+    },
+    {
+      "repo": "Pro0217-MyTarotation",
+      "team": [
+        "10",
+        "9",
+        "11",
+        "2"
+      ]
+    },
+    {
+      "repo": "Wor0206-VanA-LusC-ChuN-CouR-APIProject",
+      "team": [
+        "12",
+        "13",
+        "17",
+        "11"
+      ]
+    },
+    {
+      "repo": "Wor0205-MasJ-OgdD-VesA",
+      "team": [
+        "9",
+        "2",
+        "7"
+      ]
+    },
+    {
+      "repo": "Wor0205-HelR-MatD-PotS-RowC",
+      "team": [
+        "10",
+        "5",
+        "8",
+        "3"
+      ]
+    },
+    {
+      "repo": "Wor0205-VanA-LusC-ChuN-CouR-FirstNodeJSProject",
+      "team": [
+        "12",
+        "11",
+        "13",
+        "17"
+      ]
+    }
+  ],
+  "metadata": {
+    "totalPeople": 17,
+    "totalTeams": 24,
+    "fetchedAt": "2025-11-08T11:59:55.273Z"
+  }
+}
+
+
+=== STATISTICS ===
+Total people: 17
+Total past teams: 24
+Suggested team sizes: [5,4,4,4]
+
+=== TOP COLLABORATIONS ===
+chrislush & nchua3012: 6 times
+arecouz & Jaz-spec: 5 times
+FortyTwoFortyTwo & JosephPotashnik: 4 times
+FortyTwoFortyTwo & Oggie112: 4 times
+Jaz-spec & Oggie112: 4 times
+annavanwingerden & arecouz: 4 times
+annavanwingerden & chrislush: 4 times
+annavanwingerden & nchua3012: 4 times
+arecouz & FortyTwoFortyTwo: 4 times
+arecouz & Oggie112: 4 times

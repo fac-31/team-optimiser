@@ -1,0 +1,120 @@
+{
+  "candidates": [
+    {
+      "id": "1",
+      "name": "AlexVOiceover",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "2",
+      "name": "AnyaVeselova",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "3",
+      "name": "DNMathEye",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "4",
+      "name": "Edga380",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "5",
+      "name": "FortyTwoFortyTwo",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "6",
+      "name": "JasonWarrenUK",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "7",
+      "name": "Jaz-spec",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "8",
+      "name": "JosephPotashnik",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "9",
+      "name": "Oggie112",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "10",
+      "name": "RedHellier",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "11",
+      "name": "annavanwingerden",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "12",
+      "name": "arecouz",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "13",
+      "name": "chrislush",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "14",
+      "name": "erosdavid",
+      "available": true,
+      "notes": ""
+    },
+    {
+      "id": "17",
+      "name": "nchua3012",
+      "available": true,
+      "notes": ""
+    }
+  ],
+  "suggestedTeamSizes": [
+    [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    [
+      3,
+      4,
+      4,
+      4
+    ]
+  ],
+  "instructions": [
+    "1. Review the 'candidates' list below",
+    "2. Set 'available: false' for anyone who has left or won't participate",
+    "3. Add any notes if needed",
+    "4. Use this file to update who should be included in the next team optimization"
+  ],
+  "metadata": {
+    "totalCandidates": 15,
+    "generatedAt": "2025-11-08T12:10:32.041Z",
+    "source": "fac31-team-data.json"
+  }
+}
