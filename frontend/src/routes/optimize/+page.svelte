@@ -25,7 +25,7 @@
   // Get data from history store
   let candidates = $state<Candidate[]>([]);
   let conflictMatrix = $state<{ [key: string]: { [key: string]: number } }>({});
-  let teamSizeInput = $state('3');
+  let numTeamsInput = $state('3');
   let results = $state<OptimizationResult | null>(null);
   let loading = $state(false);
   let error = $state<string>('');
@@ -70,19 +70,21 @@
     candidates.forEach(c => c.selected = false);
   }
 
-  function calculateTeamSizes(totalPeople: number, teamSize: number): number[] {
-    const numFullTeams = Math.floor(totalPeople / teamSize);
-    const remainder = totalPeople % teamSize;
+  function calculateTeamSizes(totalPeople: number, numTeams: number): number[] {
+    // Distribute people as evenly as possible across teams
+    const baseSize = Math.floor(totalPeople / numTeams);
+    const remainder = totalPeople % numTeams;
 
     const sizes: number[] = [];
-    for (let i = 0; i < numFullTeams; i++) {
-      sizes.push(teamSize);
+
+    // First 'remainder' teams get baseSize + 1 people
+    for (let i = 0; i < remainder; i++) {
+      sizes.push(baseSize + 1);
     }
 
-    // Distribute remainder among teams
-    if (remainder > 0) {
-      // Add remainder as a smaller team
-      sizes.push(remainder);
+    // Remaining teams get baseSize people
+    for (let i = remainder; i < numTeams; i++) {
+      sizes.push(baseSize);
     }
 
     return sizes;
@@ -101,17 +103,17 @@
         throw new Error('Please select at least one candidate');
       }
 
-      const teamSize = parseInt(teamSizeInput);
-      if (isNaN(teamSize) || teamSize < 2) {
-        throw new Error('Team size must be at least 2');
+      const numTeams = parseInt(numTeamsInput);
+      if (isNaN(numTeams) || numTeams < 1) {
+        throw new Error('Number of teams must be at least 1');
       }
 
-      if (selectedCandidates.length < teamSize) {
-        throw new Error(`Not enough candidates for team size ${teamSize}. Selected: ${selectedCandidates.length}`);
+      if (selectedCandidates.length < numTeams) {
+        throw new Error(`Not enough candidates for ${numTeams} teams. Selected: ${selectedCandidates.length}`);
       }
 
       // Calculate team sizes
-      const teamSizes = calculateTeamSizes(selectedCandidates.length, teamSize);
+      const teamSizes = calculateTeamSizes(selectedCandidates.length, numTeams);
 
       const response = await fetch('http://localhost:3001/api/optimize', {
         method: 'POST',
@@ -187,22 +189,22 @@
     <section class="team-config">
       <h2>Team Configuration</h2>
       <div class="config-row">
-        <label for="teamSize">
-          <strong>Desired Team Size:</strong>
+        <label for="numTeams">
+          <strong>Desired Number of Teams:</strong>
         </label>
         <input
-          id="teamSize"
+          id="numTeams"
           type="number"
-          min="2"
+          min="1"
           max={candidates.length}
-          bind:value={teamSizeInput}
+          bind:value={numTeamsInput}
           class="team-size-input"
         />
         <span class="help-text">
-          {#if parseInt(teamSizeInput) > 0 && candidates.filter(c => c.selected).length > 0}
+          {#if parseInt(numTeamsInput) > 0 && candidates.filter(c => c.selected).length > 0}
             {@const selected = candidates.filter(c => c.selected).length}
-            {@const teamSize = parseInt(teamSizeInput)}
-            {@const teamSizes = calculateTeamSizes(selected, teamSize)}
+            {@const numTeams = parseInt(numTeamsInput)}
+            {@const teamSizes = calculateTeamSizes(selected, numTeams)}
             Will create teams of size: {teamSizes.join(', ')}
           {/if}
         </span>
