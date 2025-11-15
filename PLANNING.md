@@ -215,11 +215,11 @@ function optimizeTeams(people, teamSizes, conflictMatrix, maxResults): Optimizat
   - Real-time count of selected candidates
   - Visual feedback (color, weight) for selection state
 
-- **Team Size Configuration**:
-  - Input field for desired team size (minimum 2)
-  - Automatic calculation of team distribution
-  - Preview of resulting team sizes (e.g., [4, 4, 4, 3])
-  - Handles remainders by creating smaller final team
+- **Number of Teams Configuration**:
+  - Input field for desired number of teams (minimum 1)
+  - Automatic calculation of team sizes to distribute people as evenly as possible
+  - Preview of resulting team sizes (e.g., [4, 3, 3] for 10 people in 3 teams)
+  - Balances team sizes by distributing remainder across first teams (e.g., 10 people in 3 teams → [4, 3, 3] instead of [3, 3, 3, 1])
 
 - **Optimization Process**:
   - Filters only selected candidates
@@ -426,7 +426,8 @@ The `scripts/generateCandidatesList.js` tool:
 1. Generate initial candidates list
 2. Manually update `available: false` for departed members
 3. Optionally add notes per candidate
-4. Use filtered list for optimization
+4. Determine desired number of teams based on available candidates
+5. Use filtered list for optimization
 
 ## Testing Strategy
 

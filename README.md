@@ -19,7 +19,7 @@ This application uses **exhaustive search** to find optimal team assignments tha
 - **Performance Metrics**: Shows combinations checked and execution time
 - **Interactive UI**: Two-screen interface with navigation tabs
   - **Collaboration History** (Home): Upload and visualize team history with interactive graph
-  - **Optimize Teams**: Select available candidates, configure team size, run optimization
+  - **Optimize Teams**: Select available candidates, configure desired number of teams, run optimization
 - **Force-Directed Graph Visualization**:
   - Upload JSON files with team history data
   - Drag-and-drop nodes to reposition contributors
@@ -107,9 +107,10 @@ UI runs on http://localhost:5173
    - All team members are selected by default
    - Use checkboxes to deselect unavailable members
    - Use "Select All" / "Deselect All" for bulk operations
-3. Configure desired team size (e.g., 3, 4, 5)
-   - System automatically calculates team distribution
-   - Example: 15 people with team size 4 → teams of [4, 4, 4, 3]
+3. Configure desired number of teams (e.g., 3, 4, 5)
+   - System automatically calculates team sizes to distribute people as evenly as possible
+   - Example: 10 people divided into 3 teams → teams of [4, 3, 3]
+   - Example: 15 people divided into 4 teams → teams of [4, 4, 4, 3]
 4. Click "Optimize Teams" to find the best team assignments
 5. View results showing:
    - Minimum conflict score
@@ -151,7 +152,7 @@ This generates:
 
 1. Open [scripts/candidates.json](scripts/candidates.json)
 2. Set `"available": false` for anyone who has left the program
-3. Update the team size configuration based on available candidates
+3. Update the desired number of teams based on available candidates
 4. Use this filtered data in the optimizer
 
 **Current FAC-31 Data:**
